@@ -1,8 +1,40 @@
-/* Header */ 
+body {
+  font-family: "Inter", sans-serif;
+}
 
+/* Shared style  */
 
-.nav{
-    align-items: center;
+:root {
+  --gradient-color: linear-gradient(
+    to right,
+    #f7e93f 0%,
+    #fb09b4 51%,
+    #9100f8 100%
+  );
+}
+
+/* Header */
+
+.nav {
+  align-items: center;
+  background-color: #1a0b2e;
+  padding: 16px;
+}
+
+.logo {
+  color: white;
+  font-weight: 900;
+}
+
+.logo span {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu {
+  gap: 32px;
 }
 
 .menu li {
@@ -11,4 +43,76 @@
 
 .menu a {
   text-decoration: none;
+  font-size: 16px;
+  color: white;
 }
+
+.primary-btn {
+  background: var(--gradient-color);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 1000px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* Hero section */
+
+.hero {
+  background-image: url(./assets/hero-bg.png);
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 760px;
+
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-circle {
+  width: 28%;
+  min-width: 400px;
+  /* background-color: rgb(17, 16, 16) */
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle-mic{
+  background-image: url(./assets/hero-circle.png);
+  
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.circle-mic img{
+  max-width: 60%;
+}
+
+.circle-info{
+  width: 400px;
+  /* background-color: seagreen; */
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+}
+

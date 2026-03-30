@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="flex justify-around nav">
-            <div>
-                <h1 class="text-4xl">TachWave</h1>
-            </div>
+      <nav class="flex justify-around nav sm:nav-sm">
+        <div>
+          <h1 class="text-4xl logo">Tach <span>Wave</span></h1>
+        </div>
 
-            <div class="menu flex">
-                <li><a href="">About</a></li>
-                <li><a href="">Episodes</a></li>
-                <li><a href="">Host</a></li>
-            </div>
+        <div class="menu flex">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </div>
 
-            <button >Subscribe</button>
-        </nav>
+        <button class="primary-btn hover:animate-pulse">
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </nav>
+      <section class="hero">
+        <div class="hero-circle">
+          <div class="circle-mic">
+            <img src="./assets/microphone.png" alt="" />
+          </div>
+          <div class="circle-info space-y-4">
+            <h2 class="font-bold text-white text-5xl">TechWave</h2>
+            <p>
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+
+            <!-- <div class="btn">
+              <button class="primary-btn">Listen on Spotify</button>
+              <button class="primary-btn">Subscribe</button>
+            </div> -->
+          </div>
+        </div>
+      </section>
     </header>
 
-    
-</body>
+    <section
+      class="about bg-[#1A0B2E] h-[646px] w-full p-10 space-y-10 md:space-y-15"
+    >
+      <div class="about-info max-w-[1200px] mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold px-2 text-white">
+          About the Podcast
+        </h2>
+        <div class="p max-w-[760px] mx-auto">
+          <p class="text-center text-white leading-normal md:leading-10">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We break down complex topics into digestible
+            insights, explore productivity strategies that actually work, and
+            share stories of personal growth from industry leaders.
+            <br /><br />Join thousands of young professionals and tech
+            enthusiasts who start their day with TechWave.
+          </p>
+        </div>
+      </div>
+      <hr class="text-gray-300" />
+      <div class="about-rating mx-auto max-w-[1600px]  grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rating space-y-2 flex justify-center flex-col items-center">
+          <h2 class="text-[#00FF88] font-extrabold text-4xl">150K+</h2>
+          <p class="text-white/80 text-[12px]">MONTHLY LISTENERS</p>
+        </div>
+        <div class="rating space-y-2 flex justify-center flex-col items-center">
+          <h2 class="text-[#00FF88] font-extrabold text-4xl">200+</h2>
+          <p class="text-white/80 text-[12px]">EPISODES PUBLISHED</p>
+        </div>
+        <div class="rating space-y-2 flex justify-center flex-col items-center">
+          <h2 class="text-[#00FF88] font-extrabold text-4xl">4.9*</h2>
+          <p class="text-white/80 text-[12px]">AVARAGE RATING</p>
+        </div>
+        <div class="rating space-y-2 felx flex justify-center flex-col items-center">
+          <h2 class="text-[#00FF88] font-extrabold text-4xl">50+</h2>
+          <p class="text-white/80 text-[12px]">INDUSTRY EXPERTS</p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
