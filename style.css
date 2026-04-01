@@ -47,6 +47,10 @@ body {
   color: white;
 }
 
+.menu a:hover{
+  font-weight: bold;
+}
+
 .primary-btn {
   background: var(--gradient-color);
   border: none;
@@ -58,61 +62,8 @@ body {
   cursor: pointer;
   transition: 0.4s;
 }
-
-/* Hero section */
-
-.hero {
-  background-image: url(./assets/hero-bg.png);
-  background-size: cover;
-  background-position:center;
-  width: 100%;
-  aspect-ratio: 16/9;
-  max-height: 760px;
-
-  background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.primary-btn:hover{
+  font-size: 17px;
 }
 
-.hero-circle {
-  width: 28%;
-  min-width: 400px;
-  /* background-color: rgb(17, 16, 16) */
-  
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.circle-mic{
-  background-image: url(./assets/hero-circle.png);
-  
-  background-repeat: no-repeat;
-  aspect-ratio: 1/1;
-  background-size: cover;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-}
-.circle-mic img{
-  max-width: 60%;
-}
-
-.circle-info{
-  width: 400px;
-  /* background-color: seagreen; */
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items:center;
-  text-align: center;
-}
 

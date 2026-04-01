@@ -18,37 +18,55 @@
   </head>
   <body>
     <header>
-      <nav class="flex justify-around nav sm:nav-sm">
+      <nav class="flex justify-between md:justify-around nav">
         <div>
           <h1 class="text-4xl logo">Tach <span>Wave</span></h1>
         </div>
 
-        <div class="menu flex">
+        <div class="menu hidden md:flex">
           <li><a href="">About</a></li>
           <li><a href="">Episodes</a></li>
           <li><a href="">Host</a></li>
         </div>
 
-        <button class="primary-btn hover:animate-pulse">
+        <button class="primary-btn hidden md:block">
           Subscribe <i class="fa-solid fa-arrow-right"></i>
         </button>
+        <button class="cursor-pointer block md:hidden">
+          <img class="w-5" src="./assets/hamburger-menu.png" alt="" />
+        </button>
       </nav>
-      <section class="hero">
-        <div class="hero-circle">
-          <div class="circle-mic">
-            <img src="./assets/microphone.png" alt="" />
+      <section
+        class="hero bg-[url('./assets/Header-1.png')] md:bg-[url('./assets/hero-bg.png')] w-full bg-cover h-110 bg-center md:h-150"
+      >
+        <div
+          class="hero-circle w-full h-full flex justify-around items-center flex-col"
+        >
+          <div class="circle-mic flex justify-center items-center pt-15 md:pt-20">
+            <img class="absolute w-45 md:w-80" src="./assets/hero-circle.png" alt="" />
+            <img
+              class="w-13 md:w-20 relative z-10"
+              src="./assets/microphone.png"
+              alt=""
+            />
           </div>
-          <div class="circle-info space-y-4">
-            <h2 class="font-bold text-white text-5xl">TechWave</h2>
-            <p>
+          <div
+            class="circle-info space-y-2 md:space-y-4 flex justify-center items-center flex-col px-2 text-center"
+          >
+            <h2 class="font-bold text-white text-4xl">TechWave</h2>
+            <p class="text-white/90">
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
 
-            <!-- <div class="btn">
-              <button class="primary-btn">Listen on Spotify</button>
-              <button class="primary-btn">Subscribe</button>
-            </div> -->
+            <div class="btn flex gap-2">
+              <button class="primary-btn"><i class="fa-brands fa-spotify mr-1"></i>Listen on Spotify</button>
+              <button
+                class="btn border border-[#00FF88] rounded-full px-4 flex justify-between items-center gap-2 font-bold text-[#00FF88] cursor-pointer hover:text-[17px] transition duration-[400ms]"
+              >
+                <img class="" src="./assets/message.png" alt="" />Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -58,7 +76,7 @@
       class="about bg-[#1A0B2E] h-[646px] w-full p-10 space-y-10 md:space-y-15"
     >
       <div class="about-info max-w-[1600px] mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold px-2 text-white">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold px-2 text-white mb-2">
           About the Podcast
         </h2>
         <div class="p max-w-[760px] mx-auto">
@@ -303,27 +321,35 @@
       </div>
     </section>
 
-    <footer class="bg-[#250D44] w-full h-60 md:h-80 lg:h-120  relative">
+    <footer class="bg-[#250D44] w-full h-60 md:h-80 lg:h-120 relative">
       <img
-        class="w-full h-[75%] absolute object-cover "
+        class="w-full h-[75%] absolute object-cover"
         src="./assets/bg-footer.png"
         alt=""
       />
-      <div class="footer-info flex justify-center flex-col items-center pt-10 md:pt-18 lg:pt-30 space-y-2">
-        <h2 class="logo text-4xl lg:text-6xl">Tach <span class="logo-span">Wave</span></h2>
-        <div class="footer-icon flex justify-center items-center flex-wrap gap-3 lg:gap-4 w-65 md:w-80 lg:w-120">
-          <img src="./assets/spotify.png" alt="">
+      <div
+        class="footer-info flex justify-center flex-col items-center pt-10 md:pt-18 lg:pt-30 space-y-2"
+      >
+        <h2 class="logo text-4xl lg:text-6xl">
+          Tach <span class="logo-span">Wave</span>
+        </h2>
+        <div
+          class="footer-icon flex justify-center items-center flex-wrap gap-3 lg:gap-4 w-65 md:w-80 lg:w-120"
+        >
+          <img src="./assets/spotify.png" alt="" />
           <p class="text-white/70">Spotify</p>
-          <img src="./assets/apple-podcast.png" alt="">
+          <img src="./assets/apple-podcast.png" alt="" />
           <p class="text-white/70">Apple Podcasts</p>
-          <img src="./assets/youtube-podcast.png" alt="">
+          <img src="./assets/youtube-podcast.png" alt="" />
           <p class="text-white/70">YouTube</p>
-          <img src="./assets/twitter.png" alt="">
+          <img src="./assets/twitter.png" alt="" />
           <p class="text-white/70">Twitter</p>
         </div>
       </div>
 
-      <p class="text-white/70 text-center mt-8 md:mt-11 lg:mt-15x"> &copy; 2026 TechWave Podcast. All rights reserved.</p>
+      <p class="text-white/70 text-center mt-8 md:mt-11 lg:mt-15x">
+        &copy; 2026 TechWave Podcast. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
