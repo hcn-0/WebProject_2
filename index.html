@@ -37,38 +37,51 @@
         </button>
       </nav>
       <section
-        class="hero bg-[url('./assets/Header-1.png')] md:bg-[url('./assets/hero-bg.png')] w-full bg-cover h-110 bg-center md:h-150"
+        class="hero bg-[url('./assets/Header-1.png')] md:bg-[url('./assets/hero-bg.png')] w-full bg-cover h-110 bg-center md:h-150 flex  justify-center"
       >
-        <div
-          class="hero-circle w-full h-full flex justify-around items-center flex-col"
-        >
-          <div class="circle-mic flex justify-center items-center pt-15 md:pt-20">
-            <img class="absolute w-45 md:w-80" src="./assets/hero-circle.png" alt="" />
-            <img
-              class="w-13 md:w-20 relative z-10"
-              src="./assets/microphone.png"
-              alt=""
-            />
-          </div>
           <div
-            class="circle-info space-y-2 md:space-y-4 flex justify-center items-center flex-col px-2 text-center"
+            class="relative hero-circle w-100  h-full flex justify-around items-center flex-col "
           >
-            <h2 class="font-bold text-white text-4xl">TechWave</h2>
-            <p class="text-white/90">
-              Your daily dose of tech insights, productivity hacks, and personal
-              growth
-            </p>
+            <div
+              class="circle-mic flex justify-center items-center pt-15 md:pt-20"
+            >
+              <img
+                class="absolute w-45 md:w-80"
+                src="./assets/hero-circle.png"
+                alt=""
+              />
+              <img
+                class="w-13 md:w-20 relative z-10"
+                src="./assets/microphone.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="btn btn-new absolute text-[14px] cursor-pointer bg-[#00FF88] rounded-full px-3 py-1 font-semibold text-[#1A0B2E] shadow-[0_0_20px_rgba(0,255,136,0.5)] animate-pulse z-20 top-10 md:top-12 left-55 md:left-65 "
+            >
+              NEW
+            </div>
+            <div
+              class="circle-info space-y-2 md:space-y-4 flex justify-center items-center flex-col px-2 text-center"
+            >
+              <h2 class="font-bold text-white text-4xl">TechWave</h2>
+              <p class="text-white/90">
+                Your daily dose of tech insights, productivity hacks, and personal
+                growth
+              </p>
 
-            <div class="btn flex gap-2">
-              <button class="primary-btn"><i class="fa-brands fa-spotify mr-1"></i>Listen on Spotify</button>
-              <button
-                class="btn border border-[#00FF88] rounded-full px-4 flex justify-between items-center gap-2 font-bold text-[#00FF88] cursor-pointer hover:text-[17px] transition duration-[400ms]"
-              >
-                <img class="" src="./assets/message.png" alt="" />Subscribe
-              </button>
+              <div class="btn flex gap-2">
+                <button class="primary-btn">
+                  <i class="fa-brands fa-spotify mr-1"></i>Listen on Spotify
+                </button>
+                <button
+                  class="btn border border-[#00FF88] rounded-full px-4 flex justify-between items-center gap-2 font-bold text-[#00FF88] cursor-pointer hover:text-[17px] transition duration-[400ms]"
+                >
+                  <img class="" src="./assets/message.png" alt="" />Subscribe
+                </button>
+              </div>
             </div>
           </div>
-        </div>
       </section>
     </header>
 
@@ -76,7 +89,9 @@
       class="about bg-[#1A0B2E] h-[646px] w-full p-10 space-y-10 md:space-y-15"
     >
       <div class="about-info max-w-[1600px] mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold px-2 text-white mb-2">
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-bold px-2 text-white mb-2"
+        >
           About the Podcast
         </h2>
         <div class="p max-w-[760px] mx-auto">

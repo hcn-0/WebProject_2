@@ -47,7 +47,7 @@ body {
   color: white;
 }
 
-.menu a:hover{
+.menu a:hover {
   font-weight: bold;
 }
 
@@ -62,8 +62,32 @@ body {
   cursor: pointer;
   transition: 0.4s;
 }
-.primary-btn:hover{
+.primary-btn:hover {
   font-size: 17px;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
+.btn-new {
+  animation: wiggle 1.5s ease-in-out infinite;
+  transition: 0.5s;
+}
+
+.btn-new:hover{
+  
+  padding: 6px 16px 6px 16px ;
+  
+}
