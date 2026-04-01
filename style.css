@@ -86,8 +86,21 @@ body {
   transition: 0.5s;
 }
 
-.btn-new:hover{
-  
-  padding: 6px 16px 6px 16px ;
-  
+.btn-new:hover {
+  padding: 6px 16px 6px 16px;
+}
+
+/* Music Effect */
+@keyframes ring-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+#ring {
+  animation: ring-pulse 2.5s ease-in infinite;
 }
